@@ -1,9 +1,9 @@
 import './Header.css'
 import Filters from './Filters'
 
-function Header() {
+function Header () {
   return (
-    <section className="header">
+    <section className='header'>
       <h1>React Shopping-Cart 🛒</h1>
       <Filters />
     </section>

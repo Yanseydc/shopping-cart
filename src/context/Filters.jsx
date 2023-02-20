@@ -1,12 +1,12 @@
-import { createContext, useState } from 'react';
+import { createContext, useState } from 'react'
 
-const FilterContext = createContext();
+const FilterContext = createContext()
 
 const FilterProvider = ({ children }) => {
   const [filters, setFilters] = useState({
     category: 'all',
     price: 300
-  });
+  })
 
   return (
     <FilterContext.Provider value={{
@@ -19,4 +19,4 @@ const FilterProvider = ({ children }) => {
   )
 }
 
-export { FilterContext, FilterProvider };
+export { FilterContext, FilterProvider }
