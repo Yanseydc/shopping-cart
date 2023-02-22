@@ -5,7 +5,9 @@ function Header () {
   return (
     <section className='header'>
       <h1>React Shopping-Cart 🛒</h1>
-      <Filters />
+      <div className='container'>
+        <Filters />
+      </div>
     </section>
   )
 }

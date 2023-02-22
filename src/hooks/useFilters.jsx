@@ -3,7 +3,13 @@ import { useContext, useMemo } from 'react'
 import { FilterContext } from './../context/Filters'
 
 function useFilters () {
-  const { filters, setFilters } = useContext(FilterContext)
+  const context = useContext(FilterContext)
+
+  if (!context) {
+    throw new Error('useCart must be used within a FilterContext')
+  }
+
+  const { filters, setFilters } = context
 
   const filteredProducts = products.filter(product => {
     return product.price >= filters.price &&

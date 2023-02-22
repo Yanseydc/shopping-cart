@@ -4,5 +4,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  background-color: #0A2647;
+  color: #fff;
+  padding: 1rem 0;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
